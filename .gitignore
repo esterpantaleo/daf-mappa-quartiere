@@ -13,6 +13,7 @@ notebooks/\.ipynb_checkpoints/
 
 # dependencies
 src/visualization/node_modules
+src/visualization/package-lock.json
 
 # misc
 .DS_Store

@@ -13,7 +13,7 @@ import educazioneCulturaMilano from './data/Milano/Milano_EducazioneCultura.js';
 import istruzioneTorino from './data/Torino/istruzione.js';
 
 
-var menuUrl = "http://localhost:4000/menu.json";
+var menuUrl = "http://mappa-quartiere.default.svc.cluster.local:4000/menu.json";
 var city = "Milano";
 var colors = ['#FFFFDD',
               '#AAF191',
