@@ -11,9 +11,8 @@ RUN apt-get update && apt-get install -y \
 
 #RUN npm install -g node-gyp  
 
-
 # Copy all local files into the image.
-RUN git clone https://github.com/esterpantaleo/daf-server
+RUN git clone https://github.com/giux78/daf-server
 
 WORKDIR /daf-server
 
@@ -36,8 +35,7 @@ RUN npm run build --production
 RUN npm install -g serve
 
 # Set the command to start the node server.
-CMD serve  -s build
-
+CMD serve -l 3000 -s build
 
 # Tell Docker about the port we'll run on.
-EXPOSE 5000 4000
+EXPOSE 3000 4000
